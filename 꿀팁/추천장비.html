@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>꿀팁</title>
+  <meta name="description" content="운동장비 추천" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- 기존 카페용 리소스도 같이 사용 -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+
+  <!-- 공통 스타일 -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="app"><!-- 스코프 루트 -->
+
+  <!-- 헤더: WCB 카페 로고 + 공통 내비게이션 -->
+  <header class="page-header wrapper">
+    <div class="header-inner">
+      <h1>
+        <a href="꿀팁.html">
+          <!-- 필요에 따라 kktip 로고로 바꿔도 됨 -->
+          <img class="logo" src="images/logo.png" alt="WCB 카페 홈" />
+        </a>
+      </h1>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="장비착용및사용.html">장비 착용 및 사용</a></li>
+          <li><a href="추천장비.html">추천장비</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 필터 영역 -->
+  <section class="filter wrapper" aria-label="부위별 필터">
+    <button class="chip active" data-filter="all" aria-pressed="true">전체</button>
+    <button class="chip" data-filter="그립/스트랩">그립/스트랩</button>
+    <button class="chip" data-filter="손목">손목보호대</button>
+    <button class="chip" data-filter="팔꿈치">팔꿈치</button>
+    <button class="chip" data-filter="허리">허리</button>
+    <button class="chip" data-filter="무릎">무릎</button>
+  </section>
+
+  <!-- 제품 카드 리스트 -->
+  <main id="kktip" class="wrapper products">
+
+    <!-- 1. Zero To Hero -->
+    <div class="product" data-category="그립/스트랩">
+      <a
+        class="card-inner"
+        href="https://www.zerotohero.co.kr/gripps/?idx=195"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Zero To Hero 제품 상세 페이지로 이동"
+      >
+        <img src="images/item1.jpg" alt="추천 제품 이미지 1 (그립/스트랩)" />
+        <div class="info">
+          <h2>Zero To Hero</h2>
+          <p>추천이유 -  가성비</p>
+        </div>
+      </a>
+      <div class="hover-desc" aria-hidden="true">
+      </div>
+    </div>
+
+    <!-- 2. Harbinger (팔꿈치) -->
+    <div class="product" data-category="팔꿈치">
+      <a
+        class="card-inner"
+        href="https://harbingerfitness.com/products/red-line-knee-wraps"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Harbinger 제품 상세 페이지로 이동"
+      >
+        <img src="images/item2.jpg" alt="추천 제품 이미지 2 (팔꿈치)">
+        <div class="info">
+          <h2>Harbinger</h2>
+          <p>추천이유 - 내구성 </p>
+        </div>
+      </a>
+    </div>
+
+    <!-- 3. Cardilo (허리) -->
+    <div class="product" data-category="허리">
+      <a class="card-inner" 
+         href="https://cardillousa.com/"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Cardilo 카드">
+        <img src="images/item3.jpg" alt="추천 제품 이미지 3 (허리)" />
+        <div class="info">
+          <h2>Cardilo</h2>
+          <p>추천이유 - 내구성</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- 4. Rehband (무릎) -->
+    <div class="product" data-category="무릎">
+      <a class="card-inner" 
+         href="https://www.rehbandkorea.com/goods/goods_list.php?cateCd=002007&sort=orderCnt+desc%2Cg.regDt+desc&pageNum=20"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Rehband 카드">
+        <img src="images/item4.jpg" alt="추천 제품 이미지 4 (무릎)" />
+        <div class="info">
+          <h2>Rehband</h2>
+          <p>추천이유 - 가성비</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- 5. Versa (그립/스트랩) -->
+    <div class="product" data-category="그립/스트랩">
+      <a class="card-inner" 
+         href="https://www.versagripps.com/"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Versa 카드">
+        <img src="images/item5.jpg" alt="추천 제품 이미지 5 (그립/스트랩)" />
+        <div class="info">
+          <h2>Versa</h2>
+          <p>추천이유 - 내구성</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- 8. Sbd (무릎) -->
+    <div class="product" data-category="무릎">
+      <a class="card-inner" 
+         href="https://us.sbdapparel.com/collections/all/knee-sleeves"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Sbd 카드">
+        <img src="images/item8.jpg" alt="추천 제품 이미지 8 (무릎)" />
+        <div class="info">
+          <h2>Sbd</h2>
+          <p>추천이유 - 내구성</p>
+        </div>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- 푸터 -->
+  <footer>
+    <div class="wrapper">
+      <p><small>&copy; 2025 꿀팁</small></p>
+    </div>
+  </footer>
+
+</div><!-- /#app -->
+
+<!-- JS -->
+<script src="js/app.js"></script>
+</body>
+</html>
